@@ -1,4 +1,3 @@
-deixe formatado para o readme do github:
 📋 Controle Web de Presenças
 Uma aplicação web minimalista e responsiva para controle de presenças e faltas em sala de aula de programação. Desenvolvida com foco em simplicidade, usabilidade mobile e facilidade de uso por professores, monitores e alunos.
 🚀 Funcionalidades
