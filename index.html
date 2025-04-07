@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Presenças</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Controle de Presenças</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <label for="aluno">Nome do Aluno:</label>
+      <input type="text" id="aluno" placeholder="Digite o nome do aluno" required>
+
+      <label for="data">Data:</label>
+      <imput type="date" id="data" />
+
+      <div class="btn-group">
+        <button id="presenteBtn">Presente</button>
+        <button id="faltaBtn">Falta</button>
+      </div>
+    </section>
+
+    <section class="lista-presencas">
+      <h2>Histórico</h2>
+      <ul id="historico"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Controle de Presenças. Uso exclusivo do professor e monitor.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+:root {
+  --cor-fundo: #f8f9fa;
+  --cor-primaria: #1f2937;        /* azul-acinzentado escuro */
+  --cor-secundaria: #3b82f6;      /* azul forte (botões) */
+  --cor-clara: #ffffff;
+  --cor-texto: #111827;           /* quase preto */
+  --cor-texto-suave: #6b7280;     /* cinza médio */
+  --cor-falta: #ef4444;           /* vermelho forte */
+  --cor-presenca: #10b981;        /* verde forte */
+  --radius: 8px;
+  --espaco: 16px;
+  --font-base: 'Segoe UI', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: var(--espaco);
+}
+
+header h1, footer p {
+  color: var(--cor-primaria);
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: var(--espaco);
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type='date'] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--cor-clara);
+  cursor: pointer;
+  width: 48%;
+}
+
+button#presenteBtn {
+  background-color: var(--cor-presenca);
+}
+
+button#faltaBtn {
+  background-color: var(--cor-falta);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--espaco);
+}
+
+.lista-presenca {
+  margin-top: calc(var(--espaco) * 2);
+}
+
+.lista-presenca ul {
+  list-style-type: none;
+}
+
+.lista-presenca li {
+  background-color: var(--cor-clara);
+  border: 1px solid #ddd;
+  padding: var(--espaco);
+  margin-bottom: 10px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presente {
+  color: var(--cor-presenca);
+  font-weight: bold;
+}
+.falta {
+  color: var(--cor-falta);
+  font-weight: bold;
+}
+
+/* Mobile First */
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  input, label {
+    font-size: 1rem;
+  }
+}
