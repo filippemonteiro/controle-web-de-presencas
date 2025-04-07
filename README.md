@@ -10,6 +10,7 @@ Uma aplicação web minimalista e responsiva para controle de presenças e falta
 🌐 Acesso à Aplicação
 Acesse diretamente a aplicação pelo GitHub Pages:
 🔗 https://filippemonteiro.github.io/controle-web-de-presencas/
+
 📁 Estrutura do Projeto
 controle-web-de-presencas/
 │
@@ -22,7 +23,8 @@ controle-web-de-presencas/
 └── aluno.js # Lógica para leitura de presenças pelos alunos
 
 ⚙️ Como Utilizar
-- Clone o projeto:git clone https://github.com/filippemonteiro/controle-web-de-presencas.git
+- Clone o projeto: 
+git clone https://github.com/filippemonteiro/controle-web-de-presencas.git
 
 Configure o Supabase:
 Crie um projeto no https://supabase.com
